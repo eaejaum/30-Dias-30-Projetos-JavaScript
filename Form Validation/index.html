@@ -31,10 +31,10 @@
             </div>
             <div class="input-group">
                 <label>Your Message</label>
-                <textarea rows="5" placeholder="Enter your message"></textarea>
-                <span id="message-error"></span>
+                <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                <span id="message-error"></span> 
               </div>
-              <button>Submit</button>
+              <button onclick="return validateForm()">Submit</button>
               <span id="submit-error"></span>
         </form>
     </div>
